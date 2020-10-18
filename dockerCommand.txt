@@ -1,0 +1,8 @@
+### to build the Image 
+sudo docker build -t employee:1.0 .
+
+## to run the container and expose(it means intarctive with container) (--net:hots local db) (employee:1.0 version name)
+sudo docker run -it --net=host --name employee -p 9001:8900 employee:1.0
+
+## to stop the container 
+sudo docker stop employee
